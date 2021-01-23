@@ -9,10 +9,16 @@ int main() {
     for(i = 0; i < 101; i++) {
         marksCount[i] = 0;
     }
+    /*
+    markscount[101] = {0, 0, 0, 0, ...};
+
+    */
 
     for(i = 0; i <= 40; i++) {
         marksCount[totalMarks[i]] = marksCount[totalMarks[i]] + 1;
     }
+
+    
 
     for(i = 50; i <= 100; i++) {
         printf("%marks: %d Count %d\n", i, marksCount[i]);
